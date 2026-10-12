@@ -48,16 +48,15 @@ def d2g(x): return 12*x**2 - 6
 # TODO 2B: run the same three methods on g, from x0=0 AND from x0=2.
 #   For Newton (which solves dg(x)=0), also check the sign of d2g at the answer:
 x_newton = newton(dg, x0=0, fprime=d2g)
-print("newton:", x_newton)
+print("newton:", x_newton) #OUTPUT: newton: 0.16993844331159128
 
 x = 0
 lr = 0.1
 for i in range(100):
     x = x - lr * dg(x)
-print("gradient descent:", x)
-
+print("gradient descent:", x) #OUTPUT: gradient descent: -1.3008395659415772
 result = minimize(g, x0=[0], method="SLSQP")
-print("SLSQP:", result.x)
+print("SLSQP:", result.x)  # OUTPUT:  SLSQP: [-1.30085694]
 #   d2g > 0 means a minimum, d2g < 0 means a maximum.
 #   In your README note: do the methods agree? did Newton find a minimum or
 #   another stationary point? how did the starting point change the result?
