@@ -19,7 +19,7 @@ running plot.py, and only reruns when the CSV or script has changed since the la
 
 ## PW2 - Lab B: Optimization in Chemistry
 | Method | Result | Where on the W |
-|-=--|-=---|-=--|
+|==|==|==|
 | Gradient descent | -1.30 | bottom of the left valley |
 | SLSQP | -1.30 | bottom of the left valley |
 | Newton | 0.17 | top of the hill (a maximum) |
