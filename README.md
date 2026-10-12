@@ -1,7 +1,7 @@
 # CSPC
 TEsting branch commit
 
-## PW1 --- Lab B
+## PW1 - Lab B: Data, Plotting, and Automation
 
 The observed decay counts closely follow the analytical curve N0·e^(−λt) with λ = 0.3 —
 the scattered observed points track the smooth theoretical curve closely, with only small
