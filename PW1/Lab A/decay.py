@@ -24,7 +24,7 @@ def simulate_loop(N0, lam, dt=0.05, steps=200, seed=0):
     counts = [N0]
     for _ in range(steps):
         decayed = 0
-        for _ in range(N):                  # loop over every surviving atom
+        for _ in range(N):                  
             if rng.random() < lam * dt:
                 decayed += 1
         N -= decayed
@@ -40,7 +40,7 @@ def simulate(N0, lam, dt=0.05, steps=200, seed=0):
     N = N0
     counts = [N0]
     for _ in range(steps):
-        decayed = rng.binomial(N, lam * dt)  # decide all atoms at once
+        decayed = rng.binomial(N, lam * dt)  
         N -= decayed
         counts.append(N)
     return np.array(counts)
